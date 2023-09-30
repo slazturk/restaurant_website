@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Heaven Street | Reservation</title>
+  <!-- Place icon in the root directory -->
+  <link rel="shortcut icon" href="https://res.cloudinary.com/merve/image/upload/v1620051226/simge_rm9sph.jpg">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Restaurant Reservation Form </h1>
+    <p id="description" class="description text-center">
+      We look forward to your feedback
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">First Name</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        class="form-control"
+        placeholder="First name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="name-label" for="name">Last Name</label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        class="form-control"
+        placeholder="Last Name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="name-label" for="name">Phone Number</label>
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        class="form-control"
+        placeholder="0532 532 32 32"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Email address"
+        required
+      />
+    </div>
+     <div class="form-group">
+      <label id="date-label" for="date"
+        >Date<span class="clue"></span></label
+      >
+      <input
+        type="date"
+        name="size"
+        id="date"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Guest Number<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="size"
+        id="number"
+        min="1"
+        max="99"
+        class="form-control"
+        placeholder="Guest number"
+      />
+    </div>
+    <div class="form-group">
+      <p>Choosen Branch</p>
+      <select id="dropdown" name="location" class="form-control" required>
+        <option disabled selected value>Select location</option>
+        <option value="İstanbul">İstanbul</option>
+        <option value="Stockholm">Stockholm</option>
+        <option value="Ankara">Ankara</option>
+        <option value="Bodrum">Bodrum</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Miami">Miami</option>
+        <option value="New York">New York</option>
+        <option value="Paris">Paris</option>
+        <option value="Mykonos">Mykonos</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Dietary restrictions?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="pescatarian"
+          type="checkbox"
+          class="input-checkbox"
+        />Pescatarian</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="vgetarian"
+          type="checkbox"
+          class="input-checkbox"
+        />Vegetarian</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="vegan"
+          type="checkbox"
+          class="input-checkbox"
+        />Vegan</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="dairy"
+          type="checkbox"
+          class="input-checkbox"
+        />Dairy Free</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gluten"
+          type="checkbox"
+          class="input-checkbox"
+        />Gluten Free</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="halal"
+          type="checkbox"
+          class="input-checkbox"
+        />Halal</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Special requests?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter any special requests(i.e. birthday, anniversary, etc.)"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</html>
